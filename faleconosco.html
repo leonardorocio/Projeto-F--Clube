@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Site Artech Ar Condicionados">
+	<meta name="keywords" content="Ar-condicionado, Refrigeração, Inverter, Janela, Split, Aquecedores">
+	<meta name="author" content="Artech">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="/favicon.png" />
+	<title>NBA-FC | Cadastro</title>
+	<style>
+		* { 
+		box-sizing: border-box; }
+
+	body {
+		font-family: Verdana;
+		padding: 10px;
+		background-image:url('New folder2/nba_wallpaper5.jpg');
+		background-repeat: repeat;
+	}
+	.header {
+		text-align: center;
+	}
+	.header img {
+		max-width: 2000px;
+		max-height: 1000px;
+		width: 100%;
+	}
+	.topnav {
+  overflow: hidden;
+  background-color: #1d428a;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 24px 20px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.colunameio {
+	align-self: center;
+	text-align: center;
+}
+
+.card {
+  background-color: #e6e6e6;
+  padding: 30px;
+  margin-top: 20px;
+  text-color: black;
+}
+.column {
+  float: left;
+  padding: 10px;
+}
+
+.column.side {
+  width: 15%;
+  font-color:#80bfff;
+}
+
+.column.middle {
+  width: 70%;
+  text-align: center;
+}
+.faleconosco{
+	width: 300px;
+	margin: 0px auto;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+
+.faleconosco input{
+	margin: 5px auto;
+	padding: 5px 0;
+}
+
+.cadastro input{
+	width:100%;
+	margin: 5px auto;
+	padding: 5px 0;
+}
+.faleconosco label{
+	margin: 5px auto;
+	padding: 5px 0;
+
+
+}
+
+.faleconosco button{
+	width: 30%;
+	margin: 0 10%;
+	background-color: #b1ccf5;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #e6e6e6;
+  margin-top: 20px;
+}
+
+}
+
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+</style>
+	<style type = "text/css">
+		a:link
+		{
+			text-decoration: none;
+			font-color: black;
+		}
+		/*img{border-radius: 18px;}*/
+	</style>
+
+	
+	<script src="site.js"></script>
+
+
+</head>
+
+<body>
+	<div class= 'header'>
+		<img src="New folder2/nba.png" align="center" height="450">
+	</div>
+	<div class = "topnav">
+		<a href ="/index.html"> Início</a>
+		<a href = "/maissobre.html"> Mais sobre a NBA</a>
+		<a href = "/sobrenós.html" style= "float:right"> Cadastro</a>
+	</div>
+	<div class = "column side">
+	</div>
+	<div class = "row">
+		<div class="column middle">
+			<div class="card">
+			    <h1> Cadastro no Fã-Clube</h1>
+				<p align="justify"><font size = "5"> Venha se juntar a nós nesse fã clube, para que possamos deixá-lo cada vez melhor e mais divertido! Basta preencher o formulário abaixo:</font></p>
+
+	<form name="frmfaleconosco" method="post" action="#" onsubmit="return validaFaleConosco()">
+		<fieldset class="faleconosco">
+			<legend> Dados Pessoais:</legend>
+
+			<div class="cadastro">
+
+			<label for="nome">Nome:</label>
+			<input  type="text" name="txtnome" id="nome" placeholder="Digite seu nome completo:">
+
+			<label for="fone"> Telefone: </label>
+			<input   type="text" name="txtfone" id="fone" placeholder = "Digite seu Telefone:">
+
+			<label for="email"> Email:</label>
+			<input   type="email" name="txtemail" id="email" placeholder= "Digite seu email:">
+
+			<label for="data_nascimento"> Data Nascimento:</label>
+			<input   type="date" name="txtdata_nascimento" id="data_nascimento">
+
+			</div>
+
+			<p align="left"> Sexo: </p>
+			<p align="left"><input class="radio" type="radio" name="gender" value="male"> Masculino<br>
+			<input class="radio" type="radio" name="gender" value="female"> Feminino<br></p>
+
+			<input type="checkbox" name='inscricao' value="cadastro"> Quero me juntar ao fã clube<br><br>
+			<button type="reset" onclick="verificaMotivo(null)">Limpar</button><button type="submit">Enviar</button>
+
+		</fieldset>
+
+
+	</form>
+</div>
+
+<div class = "column side">
+	</div>
+	<div class = "footer">
+		<h2 align="center">Contatos</h2>
+		<p align="center"><strong> Dúvidas, perguntas ou seguestões? Manda um e-mail pra gente!</strong></p>
+		<p align="center"> suporte.NBA.FC@gmail.com </p>
+		<h3 align="center"> Todos os Direitos Reservados. </h3>
+	</div>
+
+
+</body>
+</html>
